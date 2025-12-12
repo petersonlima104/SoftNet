@@ -1,0 +1,174 @@
+/* =====================================
+   PALETA DE CORES – SOFTNET
+   Azul escuro: #0A1A2F
+   Azul neon: #00A8FF
+   Cinza: #F5F7FA
+   ===================================== */
+
+body {
+  background: #f5f7fa;
+  color: #0a1a2f;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0a1a2f !important;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #00a8ff !important; /* Azul neon da paleta */
+  font-weight: 700 !important;
+  border-bottom: 2px solid #00a8ff;
+}
+
+.nav-link:hover {
+  color: #00a8ff !important;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(38, 66, 102, 0.9), rgba(12, 28, 49, 0.9)),
+    url("/img/Banner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* CARDS */
+.service-card {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+}
+
+/* ======== CONTATO ======== */
+
+.contact-page {
+  background-color: #ffffff !important; /* Azul escuro */
+  color: #f5f7fa;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-left: 5px solid #d4a017;
+  padding-left: 10px;
+  color: #0a1a2f;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #0a1a2f;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 0;
+}
+
+.contact-link:hover {
+  color: #d4a017;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+.floating-whatsapp img {
+  width: 65px;
+  transition: 0.3s;
+}
+
+.floating-whatsapp img:hover {
+  transform: scale(1.05);
+}
+
+/* ================================
+   BOTÃO FLUTUANTE WHATSAPP
+================================ */
+.whatsapp-float {
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  bottom: 22px;
+  right: 22px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+/* Animação */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+}
+
+/* FOOTER */
+footer {
+  background: #0a1a2f;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .card-preview img {
+    height: 150px;
+  }
+}

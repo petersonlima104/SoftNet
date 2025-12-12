@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SoftNet – Soluções em Tecnologia e Desenvolvimento Web</title>
+    <link rel="icon" type="image/png" href="/img/favicon.webp" />
+
+    <meta
+      name="description"
+      content="Conheça todos os serviços oferecidos pela SoftNet: criação de sites, manutenção de computadores, consultoria e suporte técnico."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.webp" height="45" /> SoftNet
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link active">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow service-card">
+            <h3>Criação de Sites</h3>
+            <p>
+              Desenvolvimento completo, rápido e profissional usando as melhores
+              tecnologias.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow service-card">
+            <h3>Manutenção de Computadores</h3>
+            <p>
+              Limpeza, upgrade, formatação e reparos técnicos com alta
+              qualidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow service-card">
+            <h3>Suporte Técnico</h3>
+            <p>Atendimento remoto e presencial para empresas e residências.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow service-card">
+            <h3>Consultoria em TI</h3>
+            <p>
+              Planejamento, organização e modernização de infraestrutura
+              tecnológica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a
+      href="https://wa.me/5551980533399"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <div>SoftNet © <span id="year"></span> – Soluções em Tecnologia</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
